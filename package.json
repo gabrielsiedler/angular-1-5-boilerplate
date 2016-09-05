@@ -1,0 +1,37 @@
+{
+  "name": "angular-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . && stylelint \"client/sass/*.scss\" --syntax scss",
+    "build-sass": "sass ./client/sass/all.scss ./client/css/app.min.css --sourcemap=none --style compressed",
+    "watch-sass": "sass --watch ./client/sass/all.scss:./client/css/app.min.css --sourcemap=none --style compressed"
+  },
+  "author": "Gabriel Siedler",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "axios": "^0.14.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+    "mongoose": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^5.0.2",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.3.1",
+    "eslint-plugin-import": "^1.10.3",
+    "nodemon": "^1.10.0",
+    "stylelint": "^7.1.0",
+    "stylelint-config-standard": "^12.0.0"
+  },
+  "engines": {
+    "node": "6.2.2"
+  }
+}
